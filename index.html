@@ -3,37 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>Lynn Nyaoke</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" ></a>Home</li>
-                <li><a href="about.html"></a>About</li>
-                <li><a href="education.html"></a>Education</li>
-                <li><a href="experience.html"></a>Experience</li>
-                <li><a href="projects.html"></a>Projects</li>
-                <li><a href="contact.html"></a>Contact</li>
-            </ul>
-        </nav>
-    </header>
-
-<section id="landing">
-    <h1>Hello, I'm Lynn Nyaoke</h1>
-    <p>A Software Engineer & Developer</p>
-    <div class="social-icons">
-        <a href="https://x.com/LynnNyaoke" target="_blank">X</a>
-        <a href="https://www.linkedin.com/in/lynn-nyaoke-058b43216/" target="_blank">LinkedIn</a>
-        <a href="https://medium.com/@lynnnyaoke" target="_blank">Medium</a>
-        <a href="mailto:lynnnyaoke@gmail.com" target="_blank">Email</a>
-        <a href="https://github.com/Wiztech-01" target="_blank">Github</a>
+    <!-- NAVIGATION BAR -->
+<head>
+    <div class="navbar">
+        <a href="#landing" id="link-landing">HOME</a>
+        <a href="#about" id="link-about">ABOUT</a>
+        <a href="#projects" id="link-projects">PROJECTS</a>
+        <a href="#contact" id="link-contact">CONTACT</a>
     </div>
-</section>    
+</head>
 
-<footer>
-    <p>&copy; 2024 Lynn Nyaoke. All rights reserved.</p>
+<div class="content">
+    <!-- HOME SECTION -->
+<section class="section" id="landing">
+    <div class="container">
+        <!-- Name and title -->
+        <div>
+            <div class="profile-name">
+                <h1 id="name"><span style="color: rgb(255, 123, 0);">L</span>ynn <span style="color: rgb(255, 123, 0);" >N</span>yaoke</h1>
+                <h3 id="role">Software Engineer | UI/UX Designer</h3>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://x.com/LynnNyaoke" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/lynn-nyaoke-058b43216/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://medium.com/@lynnnyaoke" target="_blank"><i class="fab fa-medium"></i></a>
+                <a href="https://github.com/Wiztech-01" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <!-- profile photo -->
+        <div >
+            <img class="profile-photo" src="/Lynn_Portfolio-main/lynn.jpg" alt="lynn_profile_photo"
+            style="border: solid, 2em; border-color:  rgb(255, 123, 0);">
+        </div>
+    </div>
+</section> 
+
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
+    <!-- Intro -->
+    <div class="information" style="background-color: black; opacity: 70%;">
+        <h1 id="about-me">About Me</h1>
+        <p id="about-me-text">I am a passionate about Software Engineer and UI/UX design with experience in
+            <br>various languages and tools including 
+             react, javascript, python, html, css, <br> flask, postgreSQL, MySQL, figma, and canva.</p>
+
+
+    </div>
+
+    <div class="education">
+        <div>
+            <!-- <img src="/Lynn_Portfolio-main/assets/graduation-hat.png" alt=""> -->
+        </div>
+        <h1>Education</h1>
+        <div class="school">
+ 
+            <div class="highschool">
+                <h3>Moi Girls High School</h3>
+            </div>
+            <div class="university">
+                <h3>Kenyatta university</h3>
+            </div>
+            <div class="professional-certifications">
+                <h3>Moringa School Boot Camp</h3>
+                <h3>ALX Academy</h3>
+                <h3>PLP Academy</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Skills -->
+    <div class="skills" >
+        <h1>My Skills</h1>
+        <div class="language-logos">
+            <img src="/Lynn_Portfolio/html.webp" alt="html" style="width: 2em;">
+            <img src="/Lynn_Portfolio/css.webp" alt="css" style="width: 2em;">
+            <img src="/Lynn_Portfolio/javascrip.webp" alt="javascript" style="width: 2em;">
+            <img src="/Lynn_Portfolio/python.webp" alt="python" style="width: 2em;">
+            <img src="/Lynn_Portfolio/flask1.webp" alt="flask" style="width: 2em;">
+            <img src="/Lynn_Portfolio/react.webp" alt="reactjs" style="width: 2em;">
+            <img src="/Lynn_Portfolio/prosql.webp" alt="postgreSQL" style="width: 2em;">
+            <img src="/Lynn_Portfolio/canva.webp" alt="canva" style="width: 2em;">
+            <img src="/Lynn_Portfolio/figmaicon.webp" alt="figma" style="width: 2em;">
+        </div>
+    </div>
+
+    <!-- <div class="experience" style="border: solid;">
+        <h1>My Experience</h1>
+    </div> -->
+    
+
+
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section class="section" id="projects">
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="section" id="contact">
+    <div class="contact-form">
+        <h2 id="contact-me">Contact Me</h2>
+        <form id="contactForm" action="YOUR_SERVER_ENDPOINT" method="POST">
+            <div id="formMessage" class="error"></div>
+
+            <textarea  placeholder="Name" id="" name="name"  required></textarea>
+<br>
+            <input  placeholder="email address" type="email" id="email" name="email" required>
+<br>
+            <textarea  placeholder="Message" id="message" name="message" rows="6" required></textarea>
+            <br>
+            <button type="submit" style="max-width: 10em; max-height: 7em;">Send Message</button>
+        </form>
+        <br><br>
+        <div class="social-icons-contact">
+            <a href="https://x.com/LynnNyaoke" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/lynn-nyaoke-058b43216/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://medium.com/@lynnnyaoke" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="https://github.com/Wiztech-01" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <div>
+            <p>            Mobile Number: +254 700 604 96
+            </p>
+        </div>
+    </div>
+
+
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p style="color: orange; padding-left: 10em; position: static; ">&copy; 2024 Lynn Nyaoke. All rights reserved.</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

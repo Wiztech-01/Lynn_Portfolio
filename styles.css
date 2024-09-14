@@ -53,8 +53,8 @@
 .profile-photo {
     border-radius:10000px;
     padding-top: 2em;
-    padding-left: 5em;
-    height: 30em;
+    padding-left: 2em;
+    height: 35em;
 }
 .container {
     display: flex;
